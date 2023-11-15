@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator">
+  <service>
+    <provide interface="org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator"/>
+  </service>
+  <reference name="mavenLauncher" interface="org.eclipse.m2e.core.internal.launch.IMavenLauncher" field="mavenLauncher"/>
+  <reference name="mavenModelManager" interface="org.eclipse.m2e.core.embedder.MavenModelManager" field="mavenModelManager"/>
+  <reference name="projectConfigurationManager" interface="org.eclipse.m2e.core.project.IProjectConfigurationManager" field="projectConfigurationManager"/>
+  <implementation class="org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator"/>
+</scr:component>

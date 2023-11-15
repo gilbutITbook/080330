@@ -1,0 +1,29 @@
+# /etc/fstab.sample -- sample mount table configuration for MSYS.
+
+# Lines with a "#" in column one are interpreted as comment lines;
+# with the exception of comments described as "magic", neither these
+# lines, nor any blank lines, are interpreted as configuration.
+
+# Comment lines which are described as "magic" should neither be
+# deleted, nor edited manually; ignoring this advice may cause your
+# MSYS installation to malfunction.
+
+# When running MSYS from a portable device, such as a USB thumb drive,
+# the following "magic" comment is used to track changes in host drive
+# letter assignment, so allowing MSYS-Portable start-up hooks to remap
+# mount table entries which refer to the relocated device:
+#
+# MSYSROOT=C:/CraftingInterpreters/bin/minGW/msys/1.0
+
+# The mount table configuration follows below.  The line format is
+# simple: you specify the Win32 path, followed by one or more space or
+# tab delimiters, followed by the mount point name.  In a typical UNIX
+# installation, each mount point must exist as a named directory on a
+# physically accessible device, before it can actually be used as a
+# mount point.  For this implementation the "must exist" requirement
+# is not enforced; however, it will assist programs such as find, and
+# readline's tab completion if each does physically exist.
+
+# Win32_Path				Mount_Point
+#-------------------------------------	-----------
+C:/CraftingInterpreters/bin/minGW	/mingw

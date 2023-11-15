@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.m2e.sourcelookup;singleton:=true
+Bundle-Version: 2.0.2.20230114-1820
+Bundle-Vendor: Eclipse.org - m2e
+Bundle-Name: M2E Source Lookup Core
+Require-Bundle: org.eclipse.m2e.core;bundle-version="[2.0.0,3.0.0)",org.
+ eclipse.jdt.core;bundle-version="3.7.0",org.eclipse.jdt.launching;bundl
+ e-version="3.9.0",org.eclipse.core.runtime;bundle-version="3.7.0",org.e
+ clipse.debug.ui;bundle-version="3.10.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Eclipse-BundleShape: dir
+Export-Package: org.eclipse.m2e.sourcelookup.internal.launch;x-friends:=
+ "org.eclipse.m2e.sourcelookup.ui,org.eclipse.m2e.binaryproject"
+Automatic-Module-Name: org.eclipse.m2e.sourcelookup
+Eclipse-SourceReferences: scm:git:https://github.com/eclipse-m2e/m2e-cor
+ e.git;path="org.eclipse.m2e.sourcelookup";commitId=7c964c84d6e5c20c4f1e
+ fddd8f47c8a3deafa002
+Bundle-License: Eclipse Public License - v 2.0;link="https://www.eclipse
+ .org/legal/epl-v20.html"
+
+Name: plugin.xml
+SHA-256-Digest: eJ8DKf9LjH7aJfyodWGXXzYPPo+8IPapvXSQ1JJwJ8A=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.sourcelookup/pom.xm
+ l
+SHA-256-Digest: 7ssd7nefTJDywykXCiJXv27KybEB+IrkNfVN2hZM50g=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.sourcelookup/pom.pr
+ operties
+SHA-256-Digest: IZGyMlwAP4EaQIk7JmGNpWnQ6Y4p2zvgimNjEqDaKQI=
+
+Name: org/eclipse/m2e/sourcelookup/internal/launch/MavenSourceContainerR
+ esolver.class
+SHA-256-Digest: foHhUD71wuyjVMLzP95PWng0JcIXmbCc7za/U0ZNA/4=
+
+Name: org/eclipse/m2e/sourcelookup/internal/launch/MavenSourceLookupPart
+ icipant.class
+SHA-256-Digest: AsTnX2JcTIXhLrZ7GMFyn1dKOlZPceYZCyraqXnHFro=
+

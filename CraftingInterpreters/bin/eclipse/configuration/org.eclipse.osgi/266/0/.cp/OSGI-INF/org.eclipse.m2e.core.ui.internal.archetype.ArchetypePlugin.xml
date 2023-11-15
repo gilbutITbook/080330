@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.eclipse.m2e.core.ui.internal.archetype.ArchetypePlugin" activate="activate" deactivate="shutdown">
+  <service>
+    <provide interface="org.eclipse.m2e.core.ui.internal.archetype.ArchetypePlugin"/>
+  </service>
+  <reference name="archetypeGenerator" interface="org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator" field="archetypeGenerator"/>
+  <reference name="maven" interface="org.eclipse.m2e.core.embedder.IMaven" field="maven"/>
+  <implementation class="org.eclipse.m2e.core.ui.internal.archetype.ArchetypePlugin"/>
+</scr:component>

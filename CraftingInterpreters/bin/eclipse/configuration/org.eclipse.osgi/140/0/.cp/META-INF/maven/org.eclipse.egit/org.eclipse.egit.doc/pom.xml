@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.eclipse.egit</groupId>
+    <artifactId>egit-parent</artifactId>
+    <version>6.5.0.202303070854-r</version>
+  </parent>
+  <artifactId>org.eclipse.egit.doc</artifactId>
+  <packaging>eclipse-plugin</packaging>
+  <name>Git Team Provider (Documentation)</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target if="update.egit.doc">
+                <ant inheritRefs="true" antfile="build-help.xml" target="all" />
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>ant</groupId>
+            <artifactId>optional</artifactId>
+            <version>1.5.4</version>
+          </dependency>
+          <dependency>
+            <groupId>org.eclipse.mylyn.docs</groupId>
+            <artifactId>org.eclipse.mylyn.wikitext.ant</artifactId>
+            <version>3.0.9</version>
+          </dependency>
+          <dependency>
+            <groupId>org.eclipse.mylyn.docs</groupId>
+            <artifactId>org.eclipse.mylyn.wikitext.mediawiki.ant</artifactId>
+            <version>3.0.9</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>

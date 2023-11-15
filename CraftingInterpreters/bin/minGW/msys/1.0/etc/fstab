@@ -1,0 +1,9 @@
+# /etc/fstab -- mount table configuration for MSYS.
+# Please refer to /etc/fstab.sample for explanatory annotation.
+
+# MSYS-Portable needs this "magic" comment:
+# MSYSROOT=C:/CraftingInterpreters/bin/minGW/msys/1.0
+
+# Win32_Path				Mount_Point
+#-------------------------------------	-----------
+C:/CraftingInterpreters/bin/minGW	/mingw

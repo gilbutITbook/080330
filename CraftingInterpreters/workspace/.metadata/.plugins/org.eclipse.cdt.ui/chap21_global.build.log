@@ -1,0 +1,5 @@
+19:28:46 **** Clean-only build of configuration Default for project chap21_global ****
+make clean 
+
+19:28:46 Build Finished. 0 errors, 0 warnings. (took 136ms)
+

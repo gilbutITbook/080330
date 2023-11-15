@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.jdt.bcoview.feature"
+      label="Bytecode Outline View"
+      version="1.1.0.v20230117-1348"
+      provider-name="Eclipse.org">
+
+   <description>
+      Bytecode Outline View
+   </description>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.compare"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.jdt.core" version="3.33.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="3.28.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.objectweb.asm" version="9.4.0" match="greaterOrEqual"/>
+      <import plugin="org.objectweb.asm.tree" version="9.4.0" match="greaterOrEqual"/>
+      <import plugin="org.objectweb.asm.tree.analysis" version="9.4.0" match="greaterOrEqual"/>
+      <import plugin="org.objectweb.asm.util" version="9.4.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.jdt.bcoview"
+         download-size="159"
+         install-size="306"
+         version="1.1.0.v20230116-1714"
+         unpack="false"/>
+
+</feature>

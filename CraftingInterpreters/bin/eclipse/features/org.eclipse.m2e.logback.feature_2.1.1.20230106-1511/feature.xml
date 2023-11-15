@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.m2e.logback.feature"
+      label="%featureName"
+      version="2.1.1.20230106-1511"
+      provider-name="%providerName"
+      plugin="org.eclipse.m2e.core">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <plugin
+         id="org.eclipse.m2e.logback"
+         download-size="21"
+         install-size="38"
+         version="2.1.100.20230106-1511"
+         fragment="true"
+         unpack="false"/>
+
+<license url="%licenseURL">
+      %license
+   </license></feature>

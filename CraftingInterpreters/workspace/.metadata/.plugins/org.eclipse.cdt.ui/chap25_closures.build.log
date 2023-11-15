@@ -1,0 +1,5 @@
+19:28:46 **** Clean-only build of configuration Default for project chap25_closures ****
+make clean 
+
+19:28:47 Build Finished. 0 errors, 0 warnings. (took 140ms)
+

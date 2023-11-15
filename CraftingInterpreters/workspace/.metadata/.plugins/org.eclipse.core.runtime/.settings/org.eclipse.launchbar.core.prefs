@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Lox,org.eclipse.launchbar.core.descriptorType.default\:clox.exe,org.eclipse.launchbar.core.descriptorType.default\:clox.exe (1),org.eclipse.launchbar.core.descriptorType.default\:Lox (1),org.eclipse.launchbar.core.descriptorType.default\:Lox (2)
+eclipse.preferences.version=1
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:clox_chap14_chunks/activeLaunchMode=run
+org.eclipse.cdt.debug.core.coreBuildDescriptorType\:clox_chap14_chunks/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Lox/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Lox/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:clox.exe\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:clox.exe\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

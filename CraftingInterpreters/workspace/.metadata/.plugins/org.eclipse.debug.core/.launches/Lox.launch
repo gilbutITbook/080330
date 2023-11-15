@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/jlox_chap04_scanning/src/com/craftinginterpreters/lox/Lox.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.craftinginterpreters.lox.Lox"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="jlox_chap04_scanning"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="jlox_chap04_scanning"/>
+</launchConfiguration>

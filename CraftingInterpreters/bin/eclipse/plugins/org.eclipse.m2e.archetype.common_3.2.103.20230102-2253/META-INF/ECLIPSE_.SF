@@ -1,0 +1,47 @@
+Signature-Version: 1.0
+Created-By: 11.0.16.1 (Eclipse Adoptium)
+SHA-256-Digest-Manifest: wsrgrXqzxWWh/aeRTs8V3kLLh8v8zFqefw8jAAHRH1w=
+SHA-256-Digest-Manifest-Main-Attributes: 3YStpxeCPE+8SkZePFHg41l+W3bZdDA
+ ZrT+qoygc3+o=
+
+Name: about.html
+SHA-256-Digest: 9LHklGD+X4pEWqHREqGj59ZCbf95sZGqaCFOrhTsJGE=
+
+Name: jars/archetype-descriptor-3.2.1.jar
+SHA-256-Digest: EeACL+PAPbl3fZZtIK004g4ZHFxe9nn7ao+zOqfG444=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.archetype.common/po
+ m.xml
+SHA-256-Digest: /CUBW0pj7ZZ9wo3wAkuSX0Nl9Q0HBH86TQHwYdu4fPo=
+
+Name: about_files/LICENSE-2.0.txt
+SHA-256-Digest: pgHwXlfwoswdBsTcqm60MdG9UCR1vmm7cVCWX+ZHJaw=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.archetype.common/po
+ m.properties
+SHA-256-Digest: Himlth4Awsmj5T0i9BXTJzpCewNcmaaCE505GXOc92U=
+
+Name: about_files/MPL-1.1.txt
+SHA-256-Digest: cff6TGP+E4Q7p40I+0ioC5SGEBOg5wnj411BYRM035o=
+
+Name: about_files/LICENSE-1.1.txt
+SHA-256-Digest: wSb5R81ihoUrtlrR065CgWbpV+qNmPTTBIg6dlDlxro=
+
+Name: about_files/dom4j-LICENSE.txt
+SHA-256-Digest: 1iQAoeTrGMpbappA3hYTbdLW2XdM+q7L+tV8f+a5ztM=
+
+Name: about_files/jdom-LICENSE.txt
+SHA-256-Digest: p64W72afo+jif8pLLmVNRGoUAM8JzgBV+sXjWhtReMc=
+
+Name: jars/jdom2-2.0.6.jar
+SHA-256-Digest: fpMgUf2YL/WQCU0yFBHOn+zK3wEeuxWkoIvS3xb+2Ko=
+
+Name: jars/maven-artifact-transfer-0.13.1.jar
+SHA-256-Digest: Z6gedm7lmw1K1HBR0wFLeIeudjaCOdyTS2txeHoxWYQ=
+
+Name: jars/archetype-catalog-3.2.1.jar
+SHA-256-Digest: Mh0zcwBtjqGbQlomDHtDF1lx1jW0CBuqjjNLfRYFbnA=
+
+Name: jars/archetype-common-3.2.1.jar
+SHA-256-Digest: zFk/NgWAbMj6lkj+A2W0ulIHyYgdjmg5DMx8l3iKGuE=
+

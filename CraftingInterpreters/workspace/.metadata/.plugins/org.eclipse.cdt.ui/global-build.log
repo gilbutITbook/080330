@@ -1,0 +1,49 @@
+19:22:02 **** Build of configuration Default for project chap30_optimization ****
+make all 
+make[1]: Entering directory `/c/CraftingInterpreters/workspace/chap30_optimization'
+     gcc c/chunk.c                                -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/compiler.c                             -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/debug.c                                -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/main.c                                 -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/memory.c                               -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/object.c                               -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/scanner.c                              -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/table.c                                -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/value.c                                -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc c/vm.c                                   -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+     gcc build/clox                               -std=c99 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-sign-compare -O3 -flto
+make[1]: Leaving directory `/c/CraftingInterpreters/workspace/chap30_optimization'
+19:28:45 **** Clean-only build of configuration Default for project chap14_chunks ****
+make clean 
+19:28:45 **** Clean-only build of configuration Default for project chap15_virtual ****
+make clean 
+19:28:45 **** Clean-only build of configuration Default for project chap16_scanning ****
+make clean 
+19:28:45 **** Clean-only build of configuration Default for project chap17_compiling ****
+make clean 
+19:28:45 **** Clean-only build of configuration Default for project chap18_types ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap19_strings ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap20_hash ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap21_global ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap22_local ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap23_jumping ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap24_calls ****
+make clean 
+19:28:46 **** Clean-only build of configuration Default for project chap25_closures ****
+make clean 
+19:28:47 **** Clean-only build of configuration Default for project chap26_garbage ****
+make clean 
+19:28:47 **** Clean-only build of configuration Default for project chap27_classes ****
+make clean 
+19:28:47 **** Clean-only build of configuration Default for project chap28_methods ****
+make clean 
+19:28:47 **** Clean-only build of configuration Default for project chap29_superclasses ****
+make clean 
+19:28:47 **** Clean-only build of configuration Default for project chap30_optimization ****
+make clean 

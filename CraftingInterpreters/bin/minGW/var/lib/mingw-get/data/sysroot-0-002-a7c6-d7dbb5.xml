@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<sysroot id="sysroot-0-002-a7c6-d7dbb5" path="%R">
+    <installed tarname="mingw-get-0.6.2-mingw32-beta-20131004-1-bin.tar.xz" />
+    <installed tarname="mingw-get-0.6.2-mingw32-beta-20131004-1-gui.tar.xz" />
+    <installed tarname="mingw-get-0.6.2-mingw32-beta-20131004-1-lic.tar.xz" />
+    <installed tarname="libltdl-2.4-1-mingw32-dll-7.tar.lzma" />
+    <installed tarname="libgettextpo-0.18.3.2-2-mingw32-dll-0.tar.xz">
+        <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
+        <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
+        <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+    </installed>
+    <installed tarname="libiconv-1.14-3-mingw32-dll-2.tar">
+        <download tarname="libiconv-1.14-3-mingw32-dll.tar.lzma" />
+        <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="libexpat-2.1.0-1-mingw32-dll-1.tar">
+        <download tarname="expat-2.1.0-1-mingw32-dll.tar.lzma" />
+    </installed>
+    <installed tarname="libgmp-6.1.2-2-mingw32-dll-10.tar.xz" />
+    <installed tarname="libmpfr-3.1.5-2-mingw32-dll-4.tar.xz">
+        <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
+    </installed>
+    <installed tarname="libmpc-1.0.3-1-mingw32-dll-3.tar.xz">
+        <requires ge="mingw32-libmpfr-3.1.5-mingw32-dll-4.tar" />
+        <requires ge="mingw32-libgmp-6.1.2-mingw32-dll-10.tar" />
+    </installed>
+    <installed tarname="libisl-0.18-1-mingw32-dll-15.tar.xz">
+        <requires eq="mingw32-libgmp-*-mingw32-dll-10.tar" />
+        <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="gcc-core-4.8.2-mingw32-dev.tar.meta">
+        <download tarname="none" />
+    </installed>
+    <installed tarname="mingw32-gcc-core-deps-6.3.0-1-mingw32-dll.meta">
+        <download tarname="none" />
+        <requires eq="mingw32-libisl-*-mingw32-dll-15.tar" />
+        <requires eq="mingw32-libmpc-*-mingw32-dll-3.tar" />
+    </installed>
+    <installed tarname="libquadmath-6.3.0-1-mingw32-dll-0.tar.xz">
+        <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="libgomp-6.3.0-1-mingw32-dll-1.tar.xz">
+        <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
+        <requires le="mingw32-libgomp-deps-%-mingw32-dll.tar" />
+    </installed>
+    <installed tarname="libstdc++-6.3.0-1-mingw32-dll-6.tar.xz" />
+    <installed tarname="libpthreadgc-2.10-mingw32-pre-20160821-1-dll-3.tar.xz">
+        <download tarname="pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dll-3.tar.xz" />
+    </installed>
+    <installed tarname="mingw32-libgomp-deps-5.3.0-mingw32-dll.meta">
+        <download tarname="none" />
+        <requires eq="libpthread-*-mingw32-*-dll-3.tar" />
+    </installed>
+    <installed tarname="libgcc-6.3.0-1-mingw32-dll-1.tar.xz" />
+    <installed tarname="libintl-0.18.3.2-2-mingw32-dll-8.tar.xz">
+        <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
+        <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
+    </installed>
+    <installed tarname="libiconv-1.14-3-mingw32-dev.tar.lzma">
+        <requires eq="mingw32-libiconv-%-mingw32-%-dll-2.tar" />
+    </installed>
+    <installed tarname="libiconv-1.14-3-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-libgcc-*-mingw32-dll-1.tar" />
+        <requires ge="mingw32-libintl-0.18.1.1-2-mingw32-*-dll-8.tar" />
+        <requires eq="mingw32-libiconv-%-mingw32-%-dll-2.tar" />
+    </installed>
+    <installed tarname="gettext-0.18.3.2-2-mingw32-dev.tar.xz">
+        <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
+        <requires eq="mingw32-libstdc++-*-mingw32-*-dll-6.tar" />
+        <requires eq="mingw32-libgomp-*-mingw32-*-dll-1.tar" />
+        <requires eq="mingw32-libexpat-*-mingw32-*-dll-1.tar" />
+        <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
+        <requires eq="mingw32-libgettextpo-%-mingw32-%-dll-0.tar" />
+        <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+    </installed>
+    <installed tarname="gettext-0.18.3.2-2-mingw32-bin.tar.xz">
+        <requires eq="mingw32-libintl-%-mingw32-%-dll-8.tar" />
+        <requires ge="mingw32-libiconv-1.14-2-mingw32-*-dll-2.tar" />
+        <requires eq="mingw32-libgcc-*-mingw32-*-dll-1.tar" />
+    </installed>
+    <installed tarname="libltdl-2.4-1-mingw32-dev.tar.lzma">
+        <requires eq="mingw32-libtool-%-mingw32-%-bin.tar" />
+        <requires eq="mingw32-libltdl-%-mingw32-%-dll-7.tar" />
+    </installed>
+    <installed tarname="libtool-2.4-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake-*-mingw32-*-bin.tar" />
+        <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-file-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-sed-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.11-1.11.1-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.10-1.10.2-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.9-1.9.6-3-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.8-1.8.5-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.7-1.7.9-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.6-1.6.3-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.5-1.5-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake1.4-1.4p6-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="automake-4-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-automake1.4-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.5-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.6-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.7-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.8-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.9-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.10-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.11-*-mingw32-*-bin.tar" />
+        <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-gawk-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="autoconf2.5-2.68-1-mingw32-bin.tar.lzma">
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="autoconf2.1-2.13-4-mingw32-bin.tar.lzma">
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-coreutils-*-msys-*-bin.tar" />
+        <requires eq="msys-m4-*-msys-*-bin.tar" />
+        <requires eq="msys-perl-*-msys-*-bin.tar" />
+        <requires eq="msys-texinfo-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="autoconf-10-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="msys-bash-*-msys-*-bin.tar" />
+        <requires eq="msys-core-*-msys-*-bin.tar" />
+        <requires eq="msys-gawk-*-msys-*-bin.tar" />
+    </installed>
+    <installed tarname="mingw32-autotools-2010090601-mingw32-bin.meta">
+        <download tarname="none" />
+        <requires eq="mingw32-autoconf-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.1-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-autoconf2.5-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.4-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.5-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.6-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.7-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.8-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.9-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.10-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-automake1.11-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-libtool-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-libltdl-*-mingw32-*-dev.tar" />
+        <requires eq="mingw32-gettext-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-gettext-*-mingw32-*-dev.tar" />
+        <requires eq="mingw32-libiconv-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-libiconv-*-mingw32-*-dev.tar" />
+    </installed>
+    <installed tarname="mingwrt-5.0.2-mingw32-dll.tar.xz" />
+    <installed tarname="libssp-6.3.0-1-mingw32-dll-0.tar.xz" />
+    <installed tarname="libmingwex-5.0.2-mingw32-dll-0.tar.xz" />
+    <installed tarname="w32api-5.0.2-mingw32-dev.tar.xz" />
+    <installed tarname="mingwrt-5.0.2-mingw32-dev.tar.xz">
+        <requires eq="mingwrt-%-mingw32-dll.tar" />
+    </installed>
+    <installed tarname="binutils-2.28-1-mingw32-bin.tar.xz">
+        <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+    </installed>
+    <installed tarname="libatomic-6.3.0-1-mingw32-dll-1.tar.xz" />
+    <installed tarname="libz-1.2.8-1-mingw32-dll-1.tar">
+        <download tarname="zlib-1.2.8-1-mingw32-dll.tar.lzma" />
+    </installed>
+    <installed tarname="gdb-7.6.1-1-mingw32-bin.tar.lzma">
+        <requires eq="mingw32-libz-*-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="make-3.82.90-2-mingw32-cvs-20120902-bin.tar.lzma">
+        <requires eq="mingw32-libintl-*-mingw32-*-dll-8.tar" />
+    </installed>
+    <installed tarname="gcc-6.3.0-1-mingw32-lic.tar.xz" />
+    <installed tarname="gcc-objc-4.8.2-mingw32-dev.tar.meta">
+        <download tarname="none" />
+    </installed>
+    <installed tarname="gcc-core-6.3.0-1-mingw32-bin.tar.xz">
+        <requires eq="binutils-*-mingw32-bin.tar" />
+        <requires eq="mingwrt-*-mingw32-dev.tar" />
+        <requires eq="w32api-*-mingw32-dev.tar" />
+        <requires eq="libmingwex-*-mingw32-dll-0.tar" />
+        <requires eq="mingw32-libssp-%-mingw32-dll-0.tar" />
+        <requires eq="mingw32-libgomp-%-mingw32-dll-1.tar" />
+        <requires eq="mingw32-libquadmath-%-mingw32-dll-0.tar" />
+        <requires le="mingw32-gcc-core-deps-%-mingw32-dll.meta" />
+        <requires le="mingw32-gcc-core-%-mingw32-dev.tar" />
+        <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
+        <requires eq="libatomic-%-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="mingw32-base-2013072200-mingw32-bin.meta">
+        <download tarname="none" />
+        <requires eq="mingw32-gcc-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-gcc-*-mingw32-*-lic.tar" />
+        <requires eq="mingw32-make-*-mingw32-*-bin.tar" />
+        <requires eq="mingw32-gdb-*-mingw32-*-bin.tar" />
+    </installed>
+    <installed tarname="gcc-c++-4.8.2-mingw32-dev.tar.meta">
+        <download tarname="none" />
+    </installed>
+    <installed tarname="gcc-c++-6.3.0-1-mingw32-bin.tar.xz">
+        <requires le="gcc-c++-%-mingw32-dev.tar" />
+        <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <requires eq="mingw32-libstdc++-%-mingw32-dll-6.tar" />
+    </installed>
+    <installed tarname="libobjc-6.3.0-1-mingw32-dll-4.tar.xz">
+        <requires eq="mingw32-libgcc-%-mingw32-dll-1.tar" />
+    </installed>
+    <installed tarname="gcc-objc-6.3.0-1-mingw32-bin.tar.xz">
+        <requires eq="gcc-core-%-mingw32-bin.tar" />
+        <requires le="gcc-objc-%-mingw32-dev.tar" />
+        <requires eq="libobjc-%-mingw32-dll-4.tar" />
+    </installed>
+</sysroot>

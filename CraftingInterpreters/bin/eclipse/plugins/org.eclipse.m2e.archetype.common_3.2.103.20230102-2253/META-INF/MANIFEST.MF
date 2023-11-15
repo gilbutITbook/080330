@@ -1,0 +1,116 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.3.0
+Build-Jdk-Spec: 17
+Automatic-Module-Name: org.eclipse.m2e.archetype.common
+Bundle-ClassPath: .,jars/archetype-catalog-3.2.1.jar,jars/archetype-comm
+ on-3.2.1.jar,jars/archetype-descriptor-3.2.1.jar,jars/jdom2-2.0.6.jar,j
+ ars/maven-artifact-transfer-0.13.1.jar
+Bundle-Description: Maven Integration for Eclipse provides tight integra
+ tion for Maven into the IDE
+Bundle-Developers: eu;name="Eugene Kuleshov";organization="Sonatype Inc.
+ ";timezone=-5,jvanzyl;name="Jason van Zyl";organization="Sonatype Inc."
+ ;timezone=-8,vsiveton;email="vsiveton@apache.org";name="Vincent Siveton
+ ";organization=ASF;timezone=-5,ifedorenko;name="Igor Fedorenko";organiz
+ ation="Sonatype Inc.";timezone=-5,akraev;name="Anton Kraev";timezone=-5
+ ,hboutemy;name="Hervé Boutemy",krel;name="Lukáš Křečan",bentmann;n
+ ame="Benjamin Bentmann";organization="Sonatype Inc.",dip;name="Dmitry P
+ latonoff";organization="Sonatype Inc.",rseddon;name="Rich Seddon";organ
+ ization="Sonatype Inc.",mkleint;name="Milos Kleint";organization="Sonat
+ ype Inc.",prapicau;name="Pascal Rapicault";organization="Sonatype Inc."
+ ,ptatavu;name="Vlad Tatavu";organization="Sonatype Inc.",rgould;name="R
+ ichard Gould";organization="Sonatype Inc.",fbricon;name="Fred Bricon";t
+ imezone="+1"
+Bundle-DocURL: https://www.eclipse.org/m2e/m2e-maven-runtime/org.eclipse
+ .m2e.archetype.common
+Bundle-License: "Eclipse Public License - v 2.0";link="https://www.eclip
+ se.org/legal/epl-v20.html"
+Bundle-ManifestVersion: 2
+Bundle-Name: M2E Maven Archetype Common
+Bundle-SCM: connection="scm:git:https://github.com/eclipse-m2e/m2e-core.
+ git/m2e-maven-runtime/org.eclipse.m2e.archetype.common",developer-conne
+ ction="scm:git:git@github.com:eclipse-m2e/m2e-core.git/m2e-maven-runtim
+ e/org.eclipse.m2e.archetype.common",tag=HEAD
+Bundle-SymbolicName: org.eclipse.m2e.archetype.common
+Bundle-Vendor: Eclipse.org - m2e
+Bundle-Version: 3.2.103.20230102-2253
+Eclipse-BundleShape: dir
+Eclipse-SourceReferences: scm:git:https://github.com/eclipse-m2e/m2e-cor
+ e.git;path="m2e-maven-runtime/org.eclipse.m2e.archetype.common/;";commi
+ tId=4271b40d48c97a9f8c84906566f3b74cd8272533
+Export-Package: org.apache.maven.archetype;provider=m2e;mandatory:=provi
+ der;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org.apache.mav
+ en.archetype.catalog;provider=m2e;mandatory:=provider;version="3.2.1";x
+ -friends:="org.eclipse.m2e.core.ui",org.apache.maven.archetype.catalog.
+ io.xpp3;provider=m2e;mandatory:=provider;version="3.2.1";x-friends:="or
+ g.eclipse.m2e.core.ui",org.apache.maven.archetype.common;provider=m2e;m
+ andatory:=provider;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui"
+ ,org.apache.maven.archetype.common.util;provider=m2e;mandatory:=provide
+ r;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org.apache.maven
+ .archetype.creator;provider=m2e;mandatory:=provider;version="3.2.1";x-f
+ riends:="org.eclipse.m2e.core.ui",org.apache.maven.archetype.downloader
+ ;provider=m2e;mandatory:=provider;version="3.2.1";x-friends:="org.eclip
+ se.m2e.core.ui",org.apache.maven.archetype.exception;provider=m2e;manda
+ tory:=provider;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org
+ .apache.maven.archetype.generator;provider=m2e;mandatory:=provider;vers
+ ion="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org.apache.maven.arche
+ type.metadata;provider=m2e;mandatory:=provider;version="3.2.1";x-friend
+ s:="org.eclipse.m2e.core.ui",org.apache.maven.archetype.metadata.io.xpp
+ 3;provider=m2e;mandatory:=provider;version="3.2.1";x-friends:="org.ecli
+ pse.m2e.core.ui",org.apache.maven.archetype.model;provider=m2e;mandator
+ y:=provider;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org.ap
+ ache.maven.archetype.model.io.xpp3;provider=m2e;mandatory:=provider;ver
+ sion="3.2.1";x-friends:="org.eclipse.m2e.core.ui",org.apache.maven.arch
+ etype.old;provider=m2e;mandatory:=provider;version="3.2.1";x-friends:="
+ org.eclipse.m2e.core.ui",org.apache.maven.archetype.old.descriptor;prov
+ ider=m2e;mandatory:=provider;version="3.2.1";x-friends:="org.eclipse.m2
+ e.core.ui",org.apache.maven.archetype.repositorycrawler;provider=m2e;ma
+ ndatory:=provider;version="3.2.1";x-friends:="org.eclipse.m2e.core.ui",
+ org.apache.maven.archetype.source;provider=m2e;mandatory:=provider;vers
+ ion="3.2.1";x-friends:="org.eclipse.m2e.core.ui",META-INF.plexus;x-inte
+ rnal:=true
+Import-Package: org.slf4j;resolution:=optional;version="[1.7.0,3.0.0)"
+Require-Bundle: org.eclipse.m2e.maven.runtime;bundle-version="[3.0.0,4.0
+ .0)",com.ibm.icu
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+Name: about.html
+SHA-256-Digest: DxLx0DTl4ABpKBHRrXGr0ORKBalPMev/EsgIotrdbBk=
+
+Name: jars/archetype-descriptor-3.2.1.jar
+SHA-256-Digest: og7c07OGdYJyCQaMVEQm8u8D7VBtIm8dTJmnNJSPjjY=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.archetype.common/po
+ m.xml
+SHA-256-Digest: s8eeEd0qvByT/SHvu2NyiPP4+GcJu/JoEEL+g8DTbF4=
+
+Name: about_files/LICENSE-2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.archetype.common/po
+ m.properties
+SHA-256-Digest: bpyvVsaEFHJN5g+2zndvMf55gkjkfM04MnYmVYViHd4=
+
+Name: about_files/MPL-1.1.txt
+SHA-256-Digest: U2kqLtbGosbsmzLdC4IN+ukeCh/N9iXKntC9+HBfzE8=
+
+Name: about_files/LICENSE-1.1.txt
+SHA-256-Digest: FBcHXy6BVFZgGFQw7H9nhH07zql7BghmxDbWPr9L4NQ=
+
+Name: about_files/dom4j-LICENSE.txt
+SHA-256-Digest: TyOjxKnEI0jLNbwJJJJYhccKdwj7gYk2KHFICUB1XBQ=
+
+Name: about_files/jdom-LICENSE.txt
+SHA-256-Digest: 0GIlO9PHt1PTfZtjKJBLA40cO4C5Zgwhr/uqhcgX1GI=
+
+Name: jars/jdom2-2.0.6.jar
+SHA-256-Digest: E0XxG6YG0VYD1nQFUajCGUfAIVZAdw7GcnH+eL6pfPU=
+
+Name: jars/maven-artifact-transfer-0.13.1.jar
+SHA-256-Digest: GsiKzN6Z7XHmUlO9EwhowOZU+UDwGt4HO4lesvgXzwY=
+
+Name: jars/archetype-catalog-3.2.1.jar
+SHA-256-Digest: KqBhhW5eEk+s978WgxBpAV+YQGlpp7pTTh7lV5UNZoA=
+
+Name: jars/archetype-common-3.2.1.jar
+SHA-256-Digest: eBan18mlxkt3p/0eviA6HOkrkkY43SIW+B6lvOvqarw=
+

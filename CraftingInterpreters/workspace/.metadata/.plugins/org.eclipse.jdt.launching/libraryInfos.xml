@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\CraftingInterpreters\bin\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729" version="17.0.6"/>
+    <libraryInfo home="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64" version="1.8.0_301">
+        <bootpath>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\resources.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\rt.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\jsse.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\jce.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\charsets.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\jfr.jar"/>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\ext"/>
+            <entry path="C:\Windows\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\CraftingInterpreters\bin\jdk-8u301-windows-x64\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+</libraryInfos>

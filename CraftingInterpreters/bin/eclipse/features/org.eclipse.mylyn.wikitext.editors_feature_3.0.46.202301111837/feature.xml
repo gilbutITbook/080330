@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.mylyn.wikitext.editors_feature"
+      label="%featureName"
+      version="3.0.46.202301111837"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.wikitext">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext"
+         download-size="371"
+         install-size="730"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.ant"
+         download-size="49"
+         install-size="96"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.osgi"
+         download-size="15"
+         install-size="22"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.asciidoc"
+         download-size="111"
+         install-size="207"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.textile"
+         download-size="91"
+         install-size="172"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.html"
+         download-size="50"
+         install-size="100"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.markdown"
+         download-size="83"
+         install-size="154"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+        id="org.eclipse.mylyn.wikitext.mediawiki"
+        download-size="81"
+        install-size="143"
+        version="3.0.46.202301111837"
+        unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.confluence"
+         download-size="93"
+         install-size="176"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.tracwiki"
+         download-size="66"
+         install-size="112"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.twiki"
+         download-size="49"
+         install-size="84"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.ui"
+         download-size="439"
+         install-size="907"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.help.ui"
+         download-size="1316"
+         install-size="1499"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.asciidoc.ui"
+         download-size="12"
+         install-size="22"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.textile.ui"
+         download-size="14"
+         install-size="23"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.markdown.ui"
+         download-size="11"
+         install-size="19"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.mediawiki.ui"
+         download-size="13"
+         install-size="19"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.confluence.ui"
+         download-size="13"
+         install-size="21"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.tracwiki.ui"
+         download-size="12"
+         install-size="18"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.wikitext.twiki.ui"
+         download-size="12"
+         install-size="18"
+         version="3.0.46.202301111837"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (c) 2008, 2023 Sonatype, Inc. and others
+	All rights reserved. This program and the accompanying materials
+	are made available under the terms of the Eclipse Public License 2.0
+	which accompanies this distribution, and is available at
+	https://www.eclipse.org/legal/epl-2.0/
+
+	SPDX-License-Identifier: EPL-2.0
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.eclipse.m2e</groupId>
+		<artifactId>m2e-maven-runtime</artifactId>
+		<version>2.1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>org.eclipse.m2e.maven.runtime</artifactId>
+	<version>3.8.701-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>M2E Embedded Maven Runtime (includes Incubating components)</name>
+
+	<properties>
+		<!-- maven core version -->
+		<maven-core.version>3.8.7</maven-core.version>
+		<!-- NOTE: When maven-core.version changes, this may impact the versions of the maven-resolver-*
+			jars that export the org.eclipse.aether.* packages in the org.eclipse.m2e.maven.runtime
+			bundle. So make sure the following variable has the value of the maven-resolver-* jars
+			https://bugs.eclipse.org/bugs/show_bug.cgi?id=529540 -->
+		<maven-resolver.version>1.6.3</maven-resolver.version>
+		<!-- below are m2e-specific addons -->
+		<plexus-build-api.version>0.0.7</plexus-build-api.version>
+		<okhttp-connector.version>0.17.8</okhttp-connector.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-core</artifactId>
+			<exclusions>
+				<!-- Excluded dependencies are fulfilled via the OSGi requirements specified below as Import-Package/Require-Bundle and
+					therefore don't have to be embedded. Or they are not required. -->
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.checkerframework</groupId>
+					<artifactId>checker-compat-qual</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>aopalliance</groupId>
+					<artifactId>aopalliance</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-embedder</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-cli</groupId>
+					<artifactId>commons-cli</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-compat</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.sisu</groupId>
+			<artifactId>org.eclipse.sisu.plexus</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.sonatype.plexus</groupId>
+			<artifactId>plexus-build-api</artifactId>
+			<version>${plexus-build-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.takari.aether</groupId>
+			<artifactId>aether-connector-okhttp</artifactId>
+			<version>${okhttp-connector.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.aether</groupId>
+					<artifactId>aether-util</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.resolver</groupId>
+			<artifactId>maven-resolver-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.resolver</groupId>
+			<artifactId>maven-resolver-connector-basic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.resolver</groupId>
+			<artifactId>maven-resolver-transport-wagon</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.wagon</groupId>
+			<artifactId>wagon-file</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+		</dependency>
+		<dependency>
+			<!-- SLF4J-binding only used by a launched Maven-runtime.
+				Keep the BND-instructions below in sync with this jar's name. -->
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-slf4j-provider</artifactId>
+		</dependency>
+		<!-- globally excluded transitive dependencies (set their scope to 'provided') -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.maven</groupId>
+				<artifactId>maven</artifactId>
+				<version>${maven-core.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>biz.aQute.bnd</groupId>
+					<artifactId>bnd-maven-plugin</artifactId>
+					<configuration>
+						<bnd><![CDATA[
+							# When launching a Maven build using this embedded runtime, we want the embedded SLF4J logger binding to be used.
+							# However when the this Maven runtime is used within the Eclipse-IDE(-JVM) we don't want it to use the embedded SLF4J-binding 
+							# but instead use the SLF4J-binding provided by the Eclipse runtime. This is achived by making the embedded SLF4J-binding invisible 
+							# for OSGi, by simply NOT placing the binding's jar on the Bundle-ClassPath.
+							slf4jBinding=maven-slf4j-provider-${maven-core.version}.jar
+							M2E-SLF4JBinding=jars/${slf4jBinding}
+							-includeresource: \
+								jars/=${jars.directory}/;recursive:=false;lib:=true;filter:=!${slf4jBinding},\
+								jars/=${jars.directory}/${slf4jBinding};lib:=false
+							-exportcontents: \
+								META-INF.plexus;-noimport:=true;x-internal:=true,\
+								META-INF.sisu;-noimport:=true;x-internal:=true,\
+								org.eclipse.m2e.internal.maven.listener;x-friends:="org.eclipse.m2e.launching",\
+								org.apache.maven.*;provider=m2e;mandatory:=provider,\
+								org.codehaus.plexus.*;provider=m2e;mandatory:=provider,\
+								org.sonatype.plexus.*;provider=m2e;mandatory:=provider,\
+								org.eclipse.aether.*;provider=m2e;mandatory:=provider;version=${maven-resolver.version},\
+								com.google.inject.*;provider=m2e;mandatory:=provider,\
+								io.takari.*;provider=m2e;mandatory:=provider,\
+								org.eclipse.sisu.*;provider=m2e;mandatory:=provider;version=${maven-resolver.version}
+							Import-Package: \
+								org.slf4j;version="[1.7.31,3.0.0)",\
+								org.slf4j.spi;version="[1.7.31,3.0.0)",\
+								org.slf4j.helpers;version="[1.7.31,3.0.0)",\
+								javax.inject;version="1.0.0",\
+								javax.annotation;version="[1.2.0,2.0.0)", \
+								org.apache.commons.cli;version="[1.4.0,2.0.0)"
+							Require-Bundle: \
+								com.google.guava
+						]]></bnd>
+						<!-- All direct dependencies specified as Require-Bundle or Import-package are added to the classpath of a launched 
+							Maven-Build-JVM. See MavenEmbeddedRuntime for details. -->
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.sisu</groupId>
+				<artifactId>sisu-maven-plugin</artifactId>
+				<version>0.3.5</version>
+				<executions>
+					<execution>
+						<?m2e execute onIncremental?>
+						<id>index-plexus</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>main-index</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

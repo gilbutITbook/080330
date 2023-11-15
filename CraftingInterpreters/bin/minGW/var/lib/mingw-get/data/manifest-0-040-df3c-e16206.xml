@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-040-df3c-e16206">
+    <release tarname="msysCORE-1.0.19-1-msys-1.0.19-bin.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-011-664d-7cd9c6" />
+    </references>
+    <manifest>
+        <file path="bin/msys-1.0.dll" />
+        <file path="bin/msysmnt.exe" />
+        <file path="bin/ps.exe" />
+        <file path="bin/error-mode.exe" />
+        <file path="etc/fstab.sample" />
+        <file path="etc/inputrc.default" />
+        <file path="etc/profile" />
+        <file path="postinstall/fstab.lua" />
+        <file path="m.ico" />
+        <file path="msys.ico" />
+    </manifest>
+</package>
